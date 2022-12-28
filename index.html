@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slider__image {
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+        flex-shrink: 0;
+      }
+      .slider__innerContainer {
+        display: flex;
+        position: relative;
+        transition: all 1s;
+        left: 0px;
+      }
+      .slider__container {
+        width: 200px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      .slider__prev,
+      .slider__next {
+        position: absolute;
+      }
+      .slider__prev {
+        left: 0px;
+      }
+      .slider__next {
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="index.js"></script>
+  </body>
+</html>
