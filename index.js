@@ -45,14 +45,14 @@ function showSlider(images) {
     const currentLeftValue = sliderInnerContainer.style.left || 0;
     let newLeftValue;
     if (buttonType === "Next") {
-      newLeftValue = parseFloat(currentLeftValue) - 200;
-      if (newLeftValue === -1 * (images.length - 1) * 200) {
+      newLeftValue = parseFloat(currentLeftValue) - 400;
+      if (newLeftValue === -1 * (images.length - 1) * 400) {
         sliderNext.disabled = true;
       } else if (sliderPrev.disabled) {
         sliderPrev.disabled = false;
       }
     } else {
-      newLeftValue = parseFloat(currentLeftValue) + 200;
+      newLeftValue = parseFloat(currentLeftValue) + 400;
       if (!newLeftValue) {
         sliderPrev.disabled = true;
       } else if (sliderNext.disabled) {
